@@ -16,6 +16,14 @@ struct ControlsView: View {
                 Button {
                     workoutManager.endWorkout()
                 } label: {
+                    Image(systemName: "drop.fill")
+                }
+                .tint(.teal)
+                .font(.title2)
+                Text("Lock")
+                Button {
+                    workoutManager.endWorkout()
+                } label: {
                     Image(systemName: "xmark")
                 }
                 .tint(.red)
@@ -23,6 +31,14 @@ struct ControlsView: View {
                 Text("End")
             }
             VStack {
+                Button {
+                    workoutManager.endWorkout()
+                } label: {
+                    Image(systemName: "plus")
+                }
+                .tint(.green)
+                .font(.title2)
+                Text("New")
                 Button {
                     workoutManager.togglePause()
                 } label: {
